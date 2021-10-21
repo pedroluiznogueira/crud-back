@@ -17,4 +17,8 @@ public class ProdutoService {
     public List<Produto> listarProdutos() {
         return produtoRepository.findAll();
     }
+
+    public void createProduto(Produto produto) {
+        produtoRepository.save(produto);
+    }
 }
